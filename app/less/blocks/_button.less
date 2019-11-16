@@ -1,0 +1,30 @@
+.button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    vertical-align: middle;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    a:hover,
+    a:visited,
+    a:link,
+    a:active {
+        text-decoration: none;
+    }
+
+    &_cdlroom {
+        background: @color-cdlroom;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 130%;
+        color: @color-light;
+
+        &:hover {
+            background: @color-cdlroom - 20%;
+        }
+    }
+}

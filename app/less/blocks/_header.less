@@ -1,0 +1,85 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #ffffff;
+    box-shadow:0px 0px 5px 0px #b7b7b7;
+
+    &__inner {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        @media(min-width: 992px) {
+            width: 70%;
+        }
+    }
+
+    .logo{
+        // display: flex;
+        align-items: center;
+        width: 65px;
+    }
+
+    .phonebutton{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: #00468e;
+        border: none;
+        border-radius: 50%;
+        text-align: center;
+        
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .nav {
+        // display: flex;
+        // align-items: center;
+
+        @media(max-width: 768px){
+            // display: none;
+        }
+        
+        a {
+            display: block;
+            width: 90%;
+            margin: 10px auto;
+            padding: 10px 5px;
+            color: @color-dark;
+            text-decoration: none;
+            font-size: 140%;
+            border: 1px solid @color-dark + 100;
+            border-radius: 2px;
+            cursor: pointer;
+
+            @media(min-width: 768px){
+                font-size: 160%;
+                width: 70%;
+
+
+            }
+    
+            &:hover{
+                color: @color-dark - 50%;
+            }
+    
+            &:hover,
+            &:visited,
+            &:link,
+            &:active {
+                text-decoration: none;
+            }
+        }
+    }
+}
