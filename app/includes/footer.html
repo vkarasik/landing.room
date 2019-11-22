@@ -50,3 +50,11 @@
             var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
     })(window,document,'https://cdn.bitrix24.by/b12109026/crm/site_button/loader_1_ky5i0e.js');
 </script>
+
+<!-- Вешаем событие на кнопку для вызова формы из виджета на кастомной кнопке -->
+<script>
+    var elem = document.querySelector('.phonebutton');
+    elem.addEventListener('click', function(){
+        document.querySelector('.b24-widget-button-social-item.b24-widget-button-crmform').click();
+    })
+</script>

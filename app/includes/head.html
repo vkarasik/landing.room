@@ -4,3 +4,26 @@
 <script src="<?php $_SERVER['DOCUMENT_ROOT']?>/js/showMap.js" defer></script>
 <script src="<?php $_SERVER['DOCUMENT_ROOT']?>/js/gallery.js" defer></script>
 <script src="<?php $_SERVER['DOCUMENT_ROOT']?>/js/script.js" defer></script>
+<!-- Фикс неверного размера iframe Bitrix24 -->
+<style>
+    #bx_form_iframe_5 {
+        height: 500px !important;
+    }
+</style>
+
+<script>
+setInterval(function () {
+    var ifr = document.getElementById('bx_form_iframe_5');
+    if (ifr != null) {
+        ifr.setAttribute('scrolling', 'yes');
+        ifr.setAttribute('height', '500px');
+
+        ifr.parentElement.parentElement.style.width = '90%';
+        ifr.parentElement.parentElement.style.maxWidth = '600px';
+
+        ifr.parentElement.style.minWidth = '300px';
+        ifr.parentElement.style.width = '100%';
+        ifr.parentElement.style.maxWidth = '600px';
+    }
+}, 1000)
+</script>
