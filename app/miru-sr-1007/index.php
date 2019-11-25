@@ -13,7 +13,11 @@
     <body>
         <?php
             include '../includes/header.html';
-            include '../includes/product-details-mirusr1007.html';
+            // include '../includes/product-details-mirusr1007.html';
+
+            if($_GET['utm'] == 'black-friday'){include '../includes/product-details-mirusr1007-black-friday.html'; }
+            else{include '../includes/product-details-mirusr1007.html'; };
+
             include '../includes/footer.html';
             include '../includes/ymcounter.html';
         ?>

@@ -13,7 +13,11 @@
     <body>
         <?php
             include '../includes/header.html';
-            include '../includes/product-details-yeelight-crystal.html';
+            // include '../includes/product-details-yeelight-crystal.html';
+
+            if($_GET['utm'] == 'black-friday'){include '../includes/product-details-yeelight-crystal-black-friday.html'; }
+            else{include '../includes/product-details-yeelight-crystal.html'; };
+
             include '../includes/footer.html';
             include '../includes/ymcounter.html';
         ?>

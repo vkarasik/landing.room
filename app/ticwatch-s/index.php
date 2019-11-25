@@ -13,7 +13,10 @@
     <body>
         <?php
             include '../includes/header.html';
-            include '../includes/product-details-ticwatchs.html';
+
+            if($_GET['utm'] == 'black-friday'){include '../includes/product-details-ticwatchs-black-friday.html'; }
+            else{include '../includes/product-details-ticwatchs.html'; };
+
             include '../includes/footer.html';
             include '../includes/ymcounter.html';
         ?>
